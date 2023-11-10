@@ -5,6 +5,7 @@ class KthLargest:
         self.k = k
         self.heap = nums
         heapify(self.heap)
+        # print(self.heap)
         
         #We drop everything else so we can grab the Kth largest element in the minheap in O(1) time
         for i in range(self.k, self.n, 1):
